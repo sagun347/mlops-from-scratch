@@ -25,7 +25,10 @@ def main():
     acc = accuracy_score(y_test, preds)
 
     print(f"Accuracy: {acc:.4f}")
-
+    print("Label meanings:") 
+    print("0 =", data.target_names[0])
+    print("1 =", data.target_names[1])
+	
     joblib.dump(model, "models/model.pkl")
     print("Saved model to models/model.pkl")
 
