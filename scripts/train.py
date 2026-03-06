@@ -29,8 +29,8 @@ def main():
     print("0 =", data.target_names[0])
     print("1 =", data.target_names[1])
 	
-    joblib.dump(model, "models/model.pkl")
-    print("Saved model to models/model.pkl")
+    joblib.dump(model, "models/v1/model.pkl")
+    print("Saved model to models/v1/model.pkl")
 
 
 if __name__ == "__main__":

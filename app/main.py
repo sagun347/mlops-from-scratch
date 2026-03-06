@@ -7,7 +7,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Load model at startup
-model = joblib.load("models/model.pkl")
+model = joblib.load("models/v1/model.pkl")
 
 
 class PredictRequest(BaseModel):
